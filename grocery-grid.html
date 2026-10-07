@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lion's Pride Market: Product Grid Demo</title>
+
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="page">
+
+  <header class="site-header">
+    <h1>Lion's Pride Market</h1>
+    <p>Fresh groceries, delivered Tuesday &amp; Friday</p>
+  </header>
+
+  <!-- [6] Filters -->
+  <form class="filters" aria-label="Filter products">
+    <fieldset>
+      <legend>Aisle</legend>
+      <!-- script.js adds one radio per data-category found on the cards -->
+    </fieldset>
+  </form>
+
+  <!-- [2] Product grid -->
+  <main class="products">
+
+    <aside class="promo">
+      <strong>Fall harvest sale</strong>
+      <span>Honeycrisp apples and butternut squash, 20% off through Sunday</span>
+    </aside>
+
+    <article class="card" data-category="Produce">
+      <div class="thumb" aria-hidden="true">🍎</div>
+      <div class="info"><h2>Honeycrisp Apples</h2><p>Crisp and sweet, grown in Tennessee orchards.</p></div>
+      <div class="price-row"><span class="price">$3.49</span><span class="unit"><span class="unit-short">/lb</span><span class="unit-long">per pound</span></span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+    <article class="card" data-category="Produce">
+      <div class="thumb" aria-hidden="true">🍌</div>
+      <div class="info"><h2>Bananas</h2><p>Ripe and ready this week.</p></div>
+      <div class="price-row"><span class="price">$0.59</span><span class="unit"><span class="unit-short">/lb</span><span class="unit-long">per pound</span></span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+    <article class="card" data-category="Produce">
+      <div class="thumb" aria-hidden="true">🥑</div>
+      <div class="info"><h2>Hass Avocados, Large</h2><p>Buttery and perfect for toast, salads, and guacamole. Sold individually.</p></div>
+      <div class="price-row"><span class="price">$1.79</span><span class="badge">Low stock</span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+    <article class="card" data-category="Produce">
+      <div class="thumb" aria-hidden="true">🥬</div>
+      <div class="info"><h2>Baby Spinach</h2><p>Triple-washed, 10 oz clamshell.</p></div>
+      <div class="price-row"><span class="price">$3.99</span><span class="unit"><span class="unit-short">/10 oz</span><span class="unit-long">per 10 oz box</span></span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+    <article class="card" data-category="Produce">
+      <div class="thumb" aria-hidden="true">🍓</div>
+      <div class="info"><h2>Strawberries</h2><p>Last of the season.</p></div>
+      <div class="price-row"><span class="price">$4.49</span><span class="badge">Low stock</span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+    <article class="card" data-category="Dairy &amp; eggs">
+      <div class="thumb" aria-hidden="true">🥛</div>
+      <div class="info"><h2>Whole Milk, Half Gallon</h2><p>Local dairy, pasteurized, non-homogenized cream line on top.</p></div>
+      <div class="price-row"><span class="price">$3.29</span><span class="unit"><span class="unit-short">/ea</span><span class="unit-long">each</span></span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+    <article class="card" data-category="Dairy &amp; eggs">
+      <div class="thumb" aria-hidden="true">🥚</div>
+      <div class="info"><h2>Pasture-Raised Eggs</h2><p>One dozen, large.</p></div>
+      <div class="price-row"><span class="price">$5.49</span><span class="unit"><span class="unit-short">/doz</span><span class="unit-long">per dozen</span></span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+    <article class="card" data-category="Dairy &amp; eggs">
+      <div class="thumb" aria-hidden="true">🧀</div>
+      <div class="info"><h2>Sharp Cheddar</h2><p>Aged 12 months, 8 oz block.</p></div>
+      <div class="price-row"><span class="price">$4.99</span><span class="unit"><span class="unit-short">/8 oz</span><span class="unit-long">per 8 oz block</span></span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+    <article class="card" data-category="Bakery">
+      <div class="thumb" aria-hidden="true">🍞</div>
+      <div class="info"><h2>Sourdough Boule</h2><p>Baked this morning with a slow overnight ferment. Crackly crust, tender and tangy inside.</p></div>
+      <div class="price-row"><span class="price">$6.50</span><span class="unit"><span class="unit-short">/loaf</span><span class="unit-long">per loaf</span></span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+    <article class="card" data-category="Bakery">
+      <div class="thumb" aria-hidden="true">🥐</div>
+      <div class="info"><h2>Butter Croissants</h2><p>Pack of four.</p></div>
+      <div class="price-row"><span class="price">$7.25</span><span class="badge">Low stock</span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+    <article class="card" data-category="Meat &amp; fish">
+      <div class="thumb" aria-hidden="true">🍗</div>
+      <div class="info"><h2>Chicken Breast</h2><p>Boneless, skinless, air-chilled.</p></div>
+      <div class="price-row"><span class="price">$5.99</span><span class="unit"><span class="unit-short">/lb</span><span class="unit-long">per pound</span></span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+    <article class="card" data-category="Meat &amp; fish">
+      <div class="thumb" aria-hidden="true">🐟</div>
+      <div class="info"><h2>Atlantic Salmon Fillet</h2><p>Fresh, skin-on, roughly 6 oz portions. Wild-caught when in season, farmed otherwise.</p></div>
+      <div class="price-row"><span class="price">$12.99</span><span class="unit"><span class="unit-short">/lb</span><span class="unit-long">per pound</span></span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+    <article class="card" data-category="Pantry">
+      <div class="thumb" aria-hidden="true">🍝</div>
+      <div class="info"><h2>Bronze-Cut Spaghetti</h2><p>Holds sauce beautifully.</p></div>
+      <div class="price-row"><span class="price">$2.79</span><span class="unit"><span class="unit-short">/1 lb</span><span class="unit-long">per 1 lb box</span></span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+    <article class="card" data-category="Pantry">
+      <div class="thumb" aria-hidden="true">🫒</div>
+      <div class="info"><h2>Extra Virgin Olive Oil</h2><p>Cold-pressed, 500 ml bottle.</p></div>
+      <div class="price-row"><span class="price">$11.49</span><span class="unit"><span class="unit-short">/500 ml</span><span class="unit-long">per 500 ml bottle</span></span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+    <article class="card" data-category="Pantry">
+      <div class="thumb" aria-hidden="true">☕</div>
+      <div class="info"><h2>Medium Roast Coffee</h2><p>Whole bean, 12 oz bag, roasted in Memphis.</p></div>
+      <div class="price-row"><span class="price">$13.99</span><span class="unit"><span class="unit-short">/12 oz</span><span class="unit-long">per 12 oz bag</span></span></div>
+      <button class="add" type="button">Add to cart</button>
+    </article>
+
+  </main>
+
+  <footer class="site-footer">
+    Demo page for CIS 311. Try resizing the window, filtering by aisle, and toggling your OS dark mode.
+  </footer>
+</div>
+</body>
+</html>
